@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Wave Cover" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="c50b24eb-eb33-413f-8e75-e7e20a5341fd">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="BookTitle" class="java.lang.String">
+
+	</parameter>
+	<parameter name="BookSubTitle" class="java.lang.String">
+
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="841" splitType="Stretch">
+			<textField>
+				<reportElement positionType="Float" x="43" y="270" width="534" height="54" forecolor="#8AA158" uuid="5bb49d37-ea51-4ca3-a18a-38cb0e66e0ee"/>
+				<box leftPadding="20" rightPadding="20"/>
+				<textElement textAlignment="Right">
+					<font size="34"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{BookTitle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="350" width="364" height="30" forecolor="#FF9100" uuid="38fc9afd-edcb-42f3-b6bc-cd258f6507b3"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Impresso em: " + new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss").format(new Date())]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="580" width="595" height="260" uuid="129eb31f-0a00-4bf3-b3e7-1b5f595d4b26"/>
+				<imageExpression><![CDATA["orange-wave.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="310" y="670" width="230" height="150" uuid="e7593e08-8a85-4da3-9f1a-4cacdeeecbc3"/>
+				<imageExpression><![CDATA["basis-logo_OUlEwd7.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="390" y="320" width="160" height="30" forecolor="#FF9100" uuid="16fdb0a4-756f-4e02-88dc-02d6d25e43f7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Manjari Bold" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[From Abaco]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>
